@@ -129,17 +129,10 @@ let g:UltiSnipsEditSplit="vertical"
 
 
 "" html, js, css
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
+au BufNewFile,BufRead *.js, *.html, *.css setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 "" python
-au BufNewFile,BufRead *.py
-	\ set tabstop=4
-	\ set shiftwidth=4
-	\ set textwidth=79
-	\ set expandtab
+au BufNewFile,BufRead *.py setlocal tabstop=4 shiftwidth=4 textwidth=79 expandtab
 
 " *******************************************************************
 "
